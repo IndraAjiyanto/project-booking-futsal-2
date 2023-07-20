@@ -1,0 +1,15 @@
+.tutor{
+    margin: 20px;
+    animation: gerak 1s;
+}
+
+@keyframes gerak {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
