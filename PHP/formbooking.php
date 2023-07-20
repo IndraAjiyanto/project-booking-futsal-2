@@ -32,7 +32,7 @@
 
 
 <div class="fr">    
-  <p>*untuk pembayaran langsung ketempat futsalnya</p>
+  <p>*untuk pembayaran DP terlebih dahulu</p>
   <h1>FORM BOOKING</h1>
 
 
