@@ -32,7 +32,7 @@
 
 
 <div class="fr">    
-  <p>*untuk pembayaran DP terlebih dahulu</p>
+  <p>*untuk pembayaran langsung ditempat saja</p>
   <h1>FORM BOOKING</h1>
 
 
