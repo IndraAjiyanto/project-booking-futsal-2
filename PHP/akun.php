@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +23,7 @@
 
     <ul class="akun">
           
-        <li><a clas ="namaAkun" href="akun.php">Indra Ajiyanto</a></li>
+        <li><a clas ="namaAkun" href="index.php">Akun</a></li>
         </ul>
     </div>
             
@@ -36,7 +45,7 @@
           <p>0895377383818</p>
           <p>indraajiyanto052@gmail.com</p>
         </div>
-        <a href="../index.php"> <button class="logout-btn">Log out</button></a>
+        <a href="../logout.php"> <button class="logout-btn">Log out</button></a>
         </div>
        
 </body>

@@ -17,7 +17,7 @@
     
         <ul class="akun">
               
-            <li><a class ="namaAkun" href="akun.php">Indra Ajiyanto</a></li>
+            <li><a class ="namaAkun" href="akun.php">Akun</a></li>
             </ul>
         </div>
             

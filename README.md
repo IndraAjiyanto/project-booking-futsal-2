@@ -1,2 +1,2 @@
 # project-booking-futsal-2
-ini untuk yang menggunakan php
+Jadi kelompok saya memilih untuk membuat project booking futsal untuk mengimplementasikan CRUD, Jadi website yang saya buat itu untuk membooking futsal secara online tanpa ribet. dengan menggunakan website ini maka untuk proses membooking futsal akan cepat dan lebih simpel dibanding masih menggunakan chat  WA untuk membookingnya.

@@ -1,3 +1,29 @@
+<?php
+session_start();
+require_once 'koneksi.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $result = $koneksi->query($sql);
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['username'] = $username;
+            header("Location: PHP/home.php");
+            exit();
+        } 
+        } 
+        else{
+        $_SESSION['error'] = ".username tidak ditemukkan*.";
+        header("Location: index.php");
+        exit();
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,16 +41,16 @@
 
     <ul class="akun">
           
-        <li><a clas ="namaAkun" href="akun.html">Indra Ajiyanto</a></li>
+        <li><a clas ="namaAkun" href="">Akun</a></li>
         </ul>
     </div>
             
         <ul>
-          <li><a href="home.html">Beranda</a></li>
-          <li><a href="formbooking.html">Booking</a></li>
-          <li><a href="carabooking.html">Cara Booking</a></li>
-          <li><a href="jadwal.html">Jadwal</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="">Beranda</a></li>
+          <li><a href="">Booking</a></li>
+          <li><a href="">Cara Booking</a></li>
+          <li><a href="">Jadwal</a></li>
+          <li><a href="">Kontak</a></li>
         </ul>
         <h2 class="iconBola">⚽</h2>
         
@@ -35,24 +61,33 @@
             <h1>Login Form</h1>
         </header>
         <div id="message-con">
+        <?php
+    
+    if (isset($_SESSION['error'])) {
+        echo "<p style='color: red;'>".$_SESSION['error']."</p>";
+        unset($_SESSION['error']);
+    }
+    ?>
         </div>
        
         <div id="login-con">
-            <form action="">
+            
+            <form action="" method="post">
                 <label > Email   : </label>
-                <input type="text" name="" id="femail">
+                <input type="email" name="username" id="femail">
 
                 <label > Password   : </label>
-                <input type="text" name="" id="fpassword">
+                <input type="password" name="password" id="fpassword">
                 
                 
-                <input onclick="cekLogin(event)" type="submit" value="Login" > 
-            </form>
+                <input type="submit" value="Login" > 
 
+            </form>
+            <div class="reg">
+            <p>belum punya akun?</p>
+            <a href="registrasi.php" >hey registrasi terlebih dahulu disini</a>
+            </div>
         </div>
     </div>
-    
-    <script src="JS/login.js"></script>  
-   
 </body>
 </html>

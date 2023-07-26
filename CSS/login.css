@@ -59,3 +59,12 @@ input[type="submit"]{
     color: white;
     cursor: pointer;
 }
+
+.reg{
+    text-align: center;
+}
+
+.reg p{
+    color: #abb1ac;
+    margin: 0 auto;
+}

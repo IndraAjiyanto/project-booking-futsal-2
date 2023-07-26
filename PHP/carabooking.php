@@ -14,7 +14,7 @@
     
         <ul class="akun">
               
-            <li><a clas ="namaAkun" href="akun.php">Indra Ajiyanto</a></li>
+            <li><a clas ="namaAkun" href="akun.php">Akun</a></li>
             </ul>
         </div>
         <ul>
@@ -29,11 +29,11 @@
     </nav>
  <div class="tutor">
     <h1>CARA BOOKING FUTSAL!!!</h1>
-    <p>1. Login terlebih dahulu dalam website ini(yang penting jangan log in ke agama lain wkwkw)</p>
+    <p>1. Login terlebih dahulu dalam website ini</p>
     <p>2. Lalu klik Booking futsal yang ada di atas</p> 
     <p>3. Isi form tersebut</p>
-    <p>4. Jika sudah terisi maka klik "book now"  yang ada di paling bawah formulir</p>
-    <p>5. Selesai dibooking maka langsung ketempat futsalnnya dan jangan lupa bayar sesuai dengan nominal yang tertera</p>
+    <p>4. Jika sudah terisi maka klik "book now"  yang terdapat di akhir formulir</p>
+    <p>5. Selesai dibooking maka data anda masuk di sistem kami, untuk pembayaran langsung ketempat futsalnnya sesuai dengan nominal yang tertera</p>
 </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const correctEmail = "faiz@gmail.com";
+const correctEmail = "in@gmail.com";
 const correctPassword = "1234";
 
 const target = document.getElementById("message-con");

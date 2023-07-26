@@ -15,7 +15,7 @@
 
     <ul class="akun">
           
-        <li><a clas ="namaAkun" href="akun.php">Indra Ajiyanto</a></li>
+        <li><a clas ="namaAkun" href="akun.php">Akun</a></li>
         </ul>
     </div>
         <ul>
@@ -30,10 +30,11 @@
     </nav>
 
     <div class="container">
-        <h1>Hubungi Kami</h1>
+        <h1>Kirim pesan</h1>
+        <p>jika terdapat kendala bisa kirim pesan kendala tersebut dibawah!!!</p>
         <form class="contact-form">
           <input type="text"  placeholder="Nama" >
-          <input type="text"  placeholder="Email" >
+          <input type="text"  placeholder="email" >
           <textarea  placeholder="Pesan" ></textarea>
           <button type="submit">Kirim Pesan</button>
         </form>

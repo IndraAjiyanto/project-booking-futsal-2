@@ -14,7 +14,7 @@
 
     <ul class="akun">
           
-        <li><a clas ="namaAkun" href="akun.php">Indra Ajiyanto</a></li>
+        <li><a class ="namaAkun" href="akun.php">Akun</a></li>
         </ul>
     </div>
             
@@ -33,41 +33,41 @@
     <table>
       <thead>
         <tr>
+        <th>No</th>
+          <th>Nama</th>
+          <th>Email</th>
           <th>Tanggal</th>
           <th>Waktu</th>
-          <th>Nama</th>
           <th>Lapangan</th>
-          <th>Total</th>
-          <th>Konfirmasi</th>
+          <th>Total Harga</th>
+          <th>Aksi</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>1 Juli 2023</td>
-          <td>19:00 - 22:00</td>
-          <td>Pertunjukan Musik</td>
-          <td>Lapangan 1</td>
-          <td>Rp 80.000</td>
-          <td><button>selesai</button></td>
-        </tr>
-        <tr>
-          <td>5 Juli 2023</td>
-          <td>10:00 - 13:00</td>
-          <td>Seminar Pemasaran</td>
-          <td>Lapangan 2</td>
-          <td>Rp 80.000</td>
-          <td><button>selesai</button></td>
-        </tr>
-        <tr>
-          <td>10 Juli 2023</td>
-          <td>14:00 - 16:00</td>
-          <td>Workshop Desain Grafis</td>
-          <td>Lapangan 1</td>
-          <td>Rp 80.000</td>
-          <td><button>selesai</button></td>
-        </tr>
-      </tbody>
-    </table>
+      <?php
+        include 'koneksi.php';
+
+        $booking = mysqli_query($koneksi, "SELECT * FROM booking");
+        $no=1;
+
+        foreach ($booking as $book) {
+          
+            echo "<tr>
+             <td>$no</td>
+             <td>" . $book['nama'] . "</td>
+             <td>" . $book['email'] . "</td>
+             <td>" . $book['tanggal'] . "</td>
+             <td>" . $book['waktu'] . "</td>
+             <td>" . $book['lapangan'] . "</td>
+             <td>" . $book['total_harga'] . "</td>
+             <td>
+             <a href='tampildata.php?id=  $book[id]  '>Edit</a> 
+             <a href='hapusdata.php?id=  $book[id]  '>Hapus</a> 
+             </td>
+             </tr>";
+             $no++;
+        }
+        ?>
+      </table>
     <p>*Jika sudah selesai bermain jangan lupa klik konfirmasi selesai di atas</p>
   </div>
 </body>
