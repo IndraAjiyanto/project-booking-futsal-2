@@ -60,15 +60,15 @@
              <td>" . $book['lapangan'] . "</td>
              <td>" . $book['total_harga'] . "</td>
              <td>
-             <a href='tampildata.php?id=  $book[id]  '>Edit</a> 
-             <a href='hapusdata.php?id=  $book[id]  '>Hapus</a> 
+             <a href='tampildata.php?id=  $book[id]  ' class='edit'>Edit</a> 
+             <br> 
+             <a href='hapusdata.php?id= $book[id] ' class='hapus' onclick='return confirm('yakin?')'>Hapus</a> 
              </td>
              </tr>";
              $no++;
         }
         ?>
       </table>
-    <p>*Jika sudah selesai bermain jangan lupa klik konfirmasi selesai di atas</p>
   </div>
 </body>
 </html>

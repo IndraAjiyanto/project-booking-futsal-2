@@ -54,7 +54,7 @@
     <img src="../asset/lapangan_futsal_di_bandar_lampung_raya_futsal.jpg">
     <img src="../asset/Ukuran-Lapangan-Futsal-Lengkap.jpg">
     <ul class="com1">
-        <li class="p">Harga: <b style="color:azure;">Rp 80.000</b> per jam</li>
+        <li class="p">Harga: <b style="color:azure;">Rp 90.000</b> per jam</li>
         <li class="p">Bola:  buah</li>
         <li class="p">alas: karpet</li>
     </ul>

@@ -2,7 +2,7 @@
 $host = 'localhost'; 
 $username = 'root'; 
 $password = ''; 
-$database = 'jajal'; 
+$database = 'project'; 
 
 $koneksi = mysqli_connect($host, $username, $password, $database);
 
@@ -39,14 +39,12 @@ if (isset($_POST["simpan"])) {
     var lapangan = document.getElementById('lapangan').value;
     var total_harga = 0;
 
-    // Hitung total harga berdasarkan lapangan yang dipilih
     if (lapangan === 'lapangan1') {
         total_harga = 'Rp80.000';
     } else if (lapangan === 'lapangan2') {
         total_harga = 'Rp90.000';
     } 
 
-    // Set nilai total_harga di input form
     var inputTotalHarga = document.getElementById('total_harga');
     inputTotalHarga.value = total_harga;
   }
