@@ -61,7 +61,6 @@
              <td>" . $book['total_harga'] . "</td>
              <td>
              <a href='tampildata.php?id=  $book[id]  ' class='edit'>Edit</a> 
-             <br> 
              <a href='hapusdata.php?id= $book[id] ' class='hapus' onclick='return confirm('yakin?')'>Hapus</a> 
              </td>
              </tr>";

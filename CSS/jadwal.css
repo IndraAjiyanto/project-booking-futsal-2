@@ -4,7 +4,6 @@ h1{
 }    
     table {
       border-collapse: collapse;
-      margin: 100px;
     }
     
     th, td {
@@ -21,14 +20,12 @@ h1{
       padding: 5px;
       background-color: aqua;
       border-radius: 5px;
-      margin-bottom: 50px;
     }
     .hapus{
       color: black ;
       padding: 5px;
       background-color: rgb(223, 10, 10);
       border-radius: 5px;
-      margin-bottom: 50px;
     }
 
     a{

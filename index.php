@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
             <div class="reg">
             <p>belum punya akun?</p>
-            <a href="registrasi.php" >hey registrasi terlebih dahulu disini</a>
+            <a href="registrasi.php" >registrasi terlebih dahulu disini</a>
             </div>
         </div>
     </div>
